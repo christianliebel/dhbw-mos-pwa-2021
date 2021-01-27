@@ -1,7 +1,7 @@
 {
-  "name": "my-pwa",
-  "short_name": "my-pwa",
-  "theme_color": "#1976d2",
+  "name": "christian-pwa",
+  "short_name": "chris-pwa",
+  "theme_color": "cornflowerblue",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
