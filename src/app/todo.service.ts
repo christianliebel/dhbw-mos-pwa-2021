@@ -21,4 +21,8 @@ export class TodoService extends Dexie {
     const id = uuidv4();
     return this.todos.add({ id, title, done: false });
   }
+
+  getAll(): Promise<Todo[]> {
+    return this.todos.toArray();
+  }
 }
