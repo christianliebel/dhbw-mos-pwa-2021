@@ -1,3 +1,4 @@
+import { ShareService } from './../share.service';
 import { TodoService } from './../todo.service';
 import { Component, OnInit } from '@angular/core';
 import { Todo } from '../todo';
@@ -13,7 +14,8 @@ export class TodosComponent implements OnInit {
   todos: Todo[] = [];
 
   constructor(private todoService: TodoService,
-    private httpClient: HttpClient, private swPush: SwPush) { }
+    private httpClient: HttpClient, private swPush: SwPush,
+    public shareService: ShareService) { }
 
   ngOnInit(): void {
     this.getAll();

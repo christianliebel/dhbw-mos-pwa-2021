@@ -7,5 +7,6 @@
   <li *ngFor="let todo of todos">
     {{ todo.title }} ({{ todo.done }})
     <button (click)="setDone(todo)">Done</button>
+    <button (click)="shareService.share(todo.title)">Share</button>
   </li>
 </ul>
