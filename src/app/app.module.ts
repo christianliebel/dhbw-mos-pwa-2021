@@ -16,6 +16,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
     MatListModule,
     // Modul hinzufügen:
     MatSnackBarModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
