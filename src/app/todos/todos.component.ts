@@ -19,6 +19,12 @@ export class TodosComponent implements OnInit {
     this.getAll();
   }
 
+  async setDone(todo: Todo) {
+    todo.done = !todo.done;
+    await this.todoService.todos.put(todo);
+    await this.getAll();
+  }
+
   async requestPush() {
     // swPush abfragen
     const subscription = await this.swPush.requestSubscription({
